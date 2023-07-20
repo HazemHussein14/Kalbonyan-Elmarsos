@@ -48,17 +48,17 @@
 ### Section 13 Project
 
 - [Project-code](./Projects/07-S13-project)
-- [Live Demo](https://s13-project.vercel.app/)
+- [Live Demo](https://react-s13-app.netlify.app/)
 
 ### movies app(S14)
 
 - [Project-code](./Projects/08-movies-app/)
-- [Live Demo](https://movie-app-react-http.vercel.app/)
+- [Live Demo](https://react-movies-app-s14.netlify.app/)
 
 ### Tasks app with firebase(S15)
 
 - [Project-code](./Projects/09-task-app-firbase/)
-- [Live Demo](https://task-app-firebase.vercel.app/)
+- [Live Demo](https://react-tasks-firebase-s15.netlify.app/)
 
 ### Form-app(S16)
 
