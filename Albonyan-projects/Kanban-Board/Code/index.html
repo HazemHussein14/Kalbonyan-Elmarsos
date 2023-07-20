@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Kalbonyan Board</title>
+</head>
+
+<body>
+  <main class="container">
+    <div class="column" id="column-1">
+      <h2 class="column-title">Not Started</h2>
+      <ul class="task-list" id="not-started">
+        <div class="dropzone"></div>
+        <button id="add-button-started" class="add-button">+ Add</button>
+      </ul>
+    </div>
+
+
+    <div class="column" id="column-2">
+      <h2 class="column-title">In Progress</h2>
+      <ul class="task-list" id="in-progress">
+        <div class="dropzone"></div>
+        <button id="add-button-progress" class="add-button">+ Add</button>
+      </ul>
+    </div>
+
+
+    <div class="column" id="column-3">
+      <h2 class="column-title">Completed</h2>
+      <ul class="task-list" id="completed">
+        <div class="dropzone"></div>
+        <button id="add-button-completed" class="add-button">+ Add</button>
+      </ul>
+    </div>
+  </main>
+</body>
+
+</html>

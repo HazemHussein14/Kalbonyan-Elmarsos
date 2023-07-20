@@ -1,0 +1,19 @@
+{
+  "name": "01-starting-with-rest-apis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Hazem",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

@@ -1,0 +1,6 @@
+node_modules/
+dist/*.js
+build/
+.env
+# Local Netlify folder
+.netlify

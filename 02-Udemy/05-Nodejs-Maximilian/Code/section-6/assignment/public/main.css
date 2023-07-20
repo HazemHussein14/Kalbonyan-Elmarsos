@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #673ab7;
+  padding: 12px;
+  margin-bottom: 20px;
+}
+
+.main-nav-list {
+  display: flex;
+  gap: 12px;
+}
+
+.main-nav-list a {
+  color: #fff;
+}

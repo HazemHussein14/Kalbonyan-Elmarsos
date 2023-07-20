@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Components</title>
+  <script src="tooltip.js"></script>
+  <script src="confirm-link.js"></script>
+  <style>
+    *{
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    :root {
+      --color-primary: #92def7;
+    }
+  </style>
+</head>
+
+<body>
+  <p>
+    <hh-tooltip class="important" text="web components is a set of standards.Something new"><span class="highlight">Web Components</span>
+    </hh-tooltip>
+    are awesome!
+  </p>
+  <hh-tooltip>another tooltip</hh-tooltip>
+  <div>This does not belong to the web component styles!</div>
+  <a is="hh-confirm-link" href="https://www.google.com">Google</a>
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+/************************/
+/*****LARGE SCREENS (1300px)*****/
+/************************/
+@media (max-width: 81.25em) {
+  .heading-primary {
+    font-size: 6.4rem;
+  }
+  .container {
+    max-width: 120rem;
+  }
+  .section-mobile-features h2 {
+    padding: 0 35.8rem;
+  }
+}
+@media (max-width: 72.5em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 65em) {
+  .header {
+    padding: 0 8rem;
+  }
+  .hero {
+    flex-direction: column;
+    padding: 0 1.2rem;
+    gap: 2.4rem;
+  }
+  .heading-primary {
+    font-size: 5.2rem;
+    line-height: 1.1;
+  }
+  .hero .content-box {
+    text-align: center;
+    padding: 0;
+  }
+  .hero-form {
+    margin: 3.2rem auto;
+  }
+  .customers {
+    justify-content: center;
+  }
+  .hero .img-box {
+    text-align: right;
+  }
+  .hero .img-box img {
+    width: 60%;
+  }
+  .marketing {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .marketing .main-content {
+    text-align: center;
+    margin-bottom: 2.4rem;
+  }
+  .marketing img {
+    display: none;
+  }
+  .sub-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .mobile-features {
+    flex-direction: column;
+  }
+  .section-mobile-features h2 {
+    padding: 0 31.8rem;
+  }
+  .section-how .container {
+    text-align: center;
+  }
+  .gallary {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .gallary-discription {
+    text-align: initial;
+  }
+}
+
+@media (max-width: 56.56em) {
+  html {
+    font-size: 50%;
+  }
+  .header {
+    gap: 1.2rem;
+  }
+  /* MOBILE NAVIGATION */
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .btn-mobile-nav {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav-1 {
+    display: none;
+  }
+
+  .nav-open .icon-mobile-nav-2 {
+    display: block;
+  }
+
+  .main-nav-links {
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+  .main-nav-link a:link,
+  .main-nav-link a:visited {
+    font-size: 2.4rem;
+  }
+  .section-mobile-features h2 {
+    padding: 0 28rem;
+  }
+}
+@media (max-width: 40.3em) {
+  .section-header {
+    text-align: center;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  .features .box {
+    text-align: center;
+  }
+  .more-info {
+    justify-content: center;
+  }
+  .section-mobile-features h2 {
+    padding: 0 14rem;
+  }
+  .inner-container {
+    width: 100%;
+    text-align: center;
+  }
+  .download {
+    justify-content: center;
+  }
+  .testimonials {
+    flex-direction: column;
+    padding: 5.4rem;
+  }
+  .testimonials-info {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  .testimonials-info div {
+    text-align: center;
+  }
+  .sponser-1 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .sponser-2 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.2rem;
+  }
+  .sponser-2 .sponser:last-child {
+    grid-column: 2;
+  }
+  .footer-content {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 3.2rem;
+  }
+  .footer-logos .social-logos,
+  .footer-logos .more {
+    justify-content: center;
+  }
+  .footer-copyright {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+}
+@media (max-width: 24em) {
+  .header {
+    padding: 0 2rem;
+  }
+  .marketing {
+    height: auto;
+  }
+  .section-mobile-features h2 {
+    padding: 0 0rem;
+  }
+  .feature-img {
+    text-align: center;
+  }
+  .feature-img img {
+    width: 80%;
+  }
+  .gallary-discription {
+    text-align: center;
+    padding: 0;
+  }
+  .btn-gallary {
+    margin: 0 auto;
+  }
+  .gallery-arrows {
+    justify-content: center;
+  }
+  .testimonials {
+    padding: 4.8rem;
+    text-align: center;
+  }
+}
+/* FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+/* - SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */

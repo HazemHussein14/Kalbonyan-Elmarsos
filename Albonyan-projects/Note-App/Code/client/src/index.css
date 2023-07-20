@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap");
+
+@layer base {
+  :root {
+    /* light theme */
+    --mainColor: #d375b9;
+    --secondaryColor: #7c8495;
+    --mainTxt: #494C6B;
+    --secondaryTxt: #9495a5;
+    /* Dark theme */
+    --mainDark: #241229;
+    --secondaryDark-bg: #25273d;
+    --mainDark-txt: #c8cbe7;
+    --secondaryDark-txt: #5b5e7e;
+  }
+
+  body {
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #fafafa;
+  }
+
+  .dark-theme {
+    background-color: var(--mainDark);
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: #f1f1f1;
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .checkbox-button {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid var(--secondaryTxt);
+    cursor: pointer;
+  }
+
+  .checkbox-button.active {
+    border-color: var(--mainColor);
+  }
+
+  .checkbox-button.checked {
+    background-color: var(--mainColor);
+  }
+
+  .checkbox-button.checked::after {
+    content: "\2713";
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .checkbox-button::after {
+    content: "";
+    display: none;
+  }
+
+  .action-buttons button.active {
+    color: var(--mainColor);
+  }
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* light theme shadows */
+.register-light {
+  box-shadow: 6px 6px 15px 0px rgba(79, 79, 79, 0.25);
+}
+
+.header-shadow {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.tasks-container-shadowL {
+  box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+}
+
+.input-shadow {
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.04),
+    0px 2px 5px 0px rgba(0, 0, 0, 0.08);
+}
+
+/* dark theme shadows */
+.tasks-container-dark {
+  box-shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.5);
+}
+
+.edit-form-dark {
+  box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.2);
+}
+.overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.26) 0%,
+    rgba(255, 255, 255, 0.07) 100%
+  );
+  backdrop-filter: blur(10px);
+}

@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+  color: #64ffda;
+}
+
+.scrollbarHide {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+@keyframes spinner {
+  0% {
+    transform: translateY(-40px) scale(0) rotate(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(40px) scale(1) rotate(360deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-40px) scale(0) rotate(-360deg);
+    opacity: 0;
+  }
+}
+
+.myElement {
+  width: 100px;
+  animation: spinner 3s ease-in infinite;
+}

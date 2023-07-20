@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --2px: 0.125rem;
+  --4px: 0.25rem;
+  --8px: 0.5rem;
+  --10px: 0.625rem;
+  --12px: 0.75rem;
+  --14px: 0.875rem;
+  --16px: 1rem;
+  --18px: 1.125rem;
+  --20px: 1.25rem;
+  --24px: 1.5rem;
+  --30px: 1.875rem;
+  --main-color: #009578;
+  --red-color: #f44336;
+}
+
+body {
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: var(--10px);
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 800px;
+  width: 800px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--24px);
+}
+
+.column-title {
+  margin-bottom: var(--20px);
+  color: #fff;
+  font-size: var(--30px);
+  user-select: none;
+}
+
+.task {
+  padding: var(--10px) var(--14px);
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+
+.task .btns {
+  position: absolute;
+  opacity: 0;
+  transition: 0.3s;
+  top: 50%;
+  right: var(--10px);
+  transform: translateY(-50%);
+}
+
+.task:hover .btns {
+  opacity: 1;
+}
+
+.input-area {
+  border: none;
+  width: 100%;
+  font-size: 16px;
+}
+
+.input-area:focus {
+  outline: none;
+}
+
+.dropzone {
+  height: var(--10px);
+  transition: background-color 0.15s, height 0.15s;
+}
+
+.dropzone.active {
+  height: var(--30px);
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.add-button {
+  border: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 100%;
+  padding: var(--10px) 0;
+  font-size: var(--16px);
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.add-button:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.small-btn {
+  background-color: #eee;
+  cursor: pointer;
+  border: none;
+  width: var(--24px);
+  height: var(--24px);
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.edit:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.remove:hover {
+  background-color: var(--red-color);
+  color: #fff;
+}
+
+@media (max-width: 37.5em) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+/* - SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
