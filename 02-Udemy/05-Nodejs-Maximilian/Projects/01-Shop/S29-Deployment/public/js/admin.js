@@ -14,7 +14,7 @@ const deleteProduct = (btn) => {
 
   const productEl = btn.closest("article");
 
-  fetch(`/admin/product/${prodId}`, {
+  fetch(`https://node-js-shop.onrender.com/admin/product/${prodId}`, {
     method: "DELETE",
     headers: {
       "csrf-token": csrf,
